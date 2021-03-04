@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "npx eslint --max-warnings=0 --ext .tsx,.ts,.js,.jsx src/ --fix"
   },
   "repository": {
     "type": "git",
@@ -18,8 +24,23 @@
   },
   "homepage": "https://github.com/djowvani/personal-website#readme",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
+    "destyle.css": "^2.0.2",
     "next": "^10.0.5",
+    "next-google-fonts": "^1.2.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-typing-effect": "^2.0.4",
+    "sass": "^1.32.6",
+    "styled-components": "^5.2.1",
+    "typewriter-effect": "^2.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-styled-components": "^1.8.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest": "^26.6.3"
   }
 }
